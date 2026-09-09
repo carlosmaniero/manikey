@@ -5,7 +5,7 @@ from components.female_pin_header.model import FemalePinHeaderModel
 
 
 @dataclass
-class FemalePinHeaderBodyBaseCAD:
+class FemalePinHeaderWireHolesBaseCAD:
     model: FemalePinHeaderModel
 
     def create_housing(self, pins: int) -> manifold3d.Manifold:

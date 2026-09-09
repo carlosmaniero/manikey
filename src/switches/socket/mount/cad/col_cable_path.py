@@ -32,7 +32,7 @@ class ColCablePathCAD(ManifoldObject):
 
         col_pins = len(self.model.layout.grid[len(self.model.layout.grid) - 1])
         col_header = load_stl_to_manifold(
-            f"build/components/female_pin_header/cad/female_pin_header_body_{col_pins}.stl"
+            f"build/components/female_pin_header/cad/female_pin_header_wire_holes_{col_pins}.stl"
         )
         result += col_header.rotate([0, 180, 270]).translate(
             self.model.pin_header_position

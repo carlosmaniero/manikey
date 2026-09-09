@@ -45,22 +45,14 @@ build/structure/body/screws/cad/hole.stl: src/structure/body/screws/cad/hole.py 
 build/assembly/base_plate/cad/base_plate.stl: src/assembly/base_plate/cad/base_plate.py src/assembly/base_plate/model.py src/assembly/base_plate/parameters.py src/components/arduino_nano_case/model.py src/components/arduino_nano_case/parameters.py src/components/arduino_pro_micro_case/model.py src/components/arduino_pro_micro_case/parameters.py src/globals/screw/parameters.py src/globals/wall/parameters.py src/models/parameters.py src/structure/body/models.py src/structure/body/parameters.py src/structure/body/screws/models.py src/switches/model.py build/components/arduino_nano_case/cad/case.stl build/components/arduino_pro_micro_case/cad/housing.stl
 build/components/arduino_nano_case/cad/case.stl: src/components/arduino_nano_case/cad/case.py src/components/arduino_nano_case/model.py src/components/arduino_nano_case/parameters.py src/globals/screw/parameters.py src/globals/wall/parameters.py
 build/components/arduino_pro_micro_case/cad/housing.stl: src/components/arduino_pro_micro_case/cad/housing.py src/components/arduino_pro_micro_case/model.py src/components/arduino_pro_micro_case/parameters.py src/globals/screw/parameters.py src/globals/wall/parameters.py
-pin_headers: build/components/female_pin_header/cad/female_pin_header_lid_2.stl \
-             build/components/female_pin_header/cad/female_pin_header_lid_3.stl \
-             build/components/female_pin_header/cad/female_pin_header_lid_4.stl \
-             build/components/female_pin_header/cad/female_pin_header_lid_5.stl \
-             build/components/female_pin_header/cad/female_pin_header_lid_6.stl \
-             build/components/female_pin_header/cad/female_pin_header_lid_7.stl \
-             build/components/female_pin_header/cad/female_pin_header_lid_8.stl \
-             build/components/female_pin_header/cad/female_pin_header_lid_9.stl \
-             build/components/female_pin_header/cad/female_pin_header_body_2.stl \
-             build/components/female_pin_header/cad/female_pin_header_body_3.stl \
-             build/components/female_pin_header/cad/female_pin_header_body_4.stl \
-             build/components/female_pin_header/cad/female_pin_header_body_5.stl \
-             build/components/female_pin_header/cad/female_pin_header_body_6.stl \
-             build/components/female_pin_header/cad/female_pin_header_body_7.stl \
-             build/components/female_pin_header/cad/female_pin_header_body_8.stl \
-             build/components/female_pin_header/cad/female_pin_header_body_9.stl
+pin_headers: build/components/female_pin_header/cad/female_pin_header_wire_holes_2.stl \
+             build/components/female_pin_header/cad/female_pin_header_wire_holes_3.stl \
+             build/components/female_pin_header/cad/female_pin_header_wire_holes_4.stl \
+             build/components/female_pin_header/cad/female_pin_header_wire_holes_5.stl \
+             build/components/female_pin_header/cad/female_pin_header_wire_holes_6.stl \
+             build/components/female_pin_header/cad/female_pin_header_wire_holes_7.stl \
+             build/components/female_pin_header/cad/female_pin_header_wire_holes_8.stl \
+             build/components/female_pin_header/cad/female_pin_header_wire_holes_9.stl
 
 build/components/female_pin_header/cad/female_pin_header_%.stl: src/components/female_pin_header/cad/female_pin_header_%.py src/components/female_pin_header/model.py src/components/female_pin_header/parameters.py
 	mkdir -p $(dir $@)

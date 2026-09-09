@@ -5,8 +5,8 @@ from injector import inject, singleton
 from core.context import injector
 from components.female_pin_header.model import FemalePinHeaderModel
 from core.manifold_ext.object import ManifoldObject
-from components.female_pin_header.cad.female_pin_header_lid import (
-    FemalePinHeaderLidBaseCAD,
+from components.female_pin_header.cad.female_pin_header_wire_holes import (
+    FemalePinHeaderWireHolesBaseCAD,
 )
 import manifold3d
 
@@ -14,14 +14,14 @@ import manifold3d
 @singleton
 @inject
 @dataclass
-class FemalePinHeaderLid8CAD(ManifoldObject):
+class FemalePinHeaderWireHoles6CAD(ManifoldObject):
     model: FemalePinHeaderModel
 
     def assemble(self) -> manifold3d.Manifold:
-        base = FemalePinHeaderLidBaseCAD(self.model)
-        return base.create_housing(8)
+        base = FemalePinHeaderWireHolesBaseCAD(self.model)
+        return base.create_housing(6)
 
 
 if __name__ == "__main__":
-    female_pin_header = injector.get(FemalePinHeaderLid8CAD)
+    female_pin_header = injector.get(FemalePinHeaderWireHoles6CAD)
     female_pin_header.program(sys.argv)
