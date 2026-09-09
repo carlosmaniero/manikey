@@ -92,7 +92,7 @@ class BasePlateModel:
         x = (
             end_x
             - self.pro_model.dimensions[1] / 2
-            - self.wall_parameters.thickness
+            - self.wall_parameters.thickness * 2
         )
 
         y = start_y + gap + nano_y_size + gap + pro_y_size / 2
@@ -118,7 +118,7 @@ class BasePlateModel:
         x = (
             end_x
             - self.nano_model.dimensions[1] / 2
-            - self.wall_parameters.thickness
+            - self.wall_parameters.thickness * 2
         )
 
         y = start_y + gap + nano_y_size / 2
